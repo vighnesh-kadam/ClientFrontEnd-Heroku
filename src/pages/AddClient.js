@@ -13,7 +13,7 @@ const AddClient = () => {
  function postInfo(e){
  
   e.preventDefault()
-  axios.post(`http://${process.env.REACT_APP_ECURL}:8080/clients`, {
+  axios.post(`http://${process.env.REACT_APP_ECURL}:${process.env.REACT_APP_PORT}/clients`, {
     name: e.target.name.value,
     email:e.target.email.value,
     revenue:e.target.revenue.value,

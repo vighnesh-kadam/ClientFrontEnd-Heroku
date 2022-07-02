@@ -11,7 +11,7 @@ const [nemail, setnemail] = useState("")
 const [nname, setnname] = useState("")
 const [nrevenue, setnrevenue] = useState()  
 function getData(){
-    axios.get(`http://${process.env.REACT_APP_ECURL}:8080/client/${id}`)
+    axios.get(`http://${process.env.REACT_APP_ECURL}:${process.env.REACT_APP_PORT}/client/${id}`)
     .then(function (response) {
       // handle success
       
@@ -32,7 +32,7 @@ function getData(){
    function putInfo(e){
     e.preventDefault()
   
-   axios.put(`http://${process.env.REACT_APP_ECURL}:8080/clients/${id}`, {
+   axios.put(`http://${process.env.REACT_APP_ECURL}:${process.env.REACT_APP_PORT}/clients/${id}`, {
    id, 
    name: e.target.name.value,
      email:e.target.email.value,

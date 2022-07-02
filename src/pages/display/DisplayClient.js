@@ -11,7 +11,7 @@ const DisplayClient = () => {
     const {user}=useAuthContext()
     function getData(){
      
-        axios.get(`http://${process.env.REACT_APP_ECURL}:8080/clients`)
+        axios.get(`http://${process.env.REACT_APP_ECURL}:${process.env.REACT_APP_PORT}/clients`)
         .then(function (response) {
           // handle success
          
@@ -26,7 +26,7 @@ const DisplayClient = () => {
         .then(function () {
           // always executed
         });
-        // axios.post(`http://${process.env.REACT_APP_ECURL}:8080/clients`, {
+        // axios.post(`http://${process.env.REACT_APP_ECURL}:${process.env.REACT_APP_PORT}/clients`, {
         //   name: "null",
         //   email:"null",
         //   revenue:0,
@@ -46,7 +46,7 @@ const DisplayClient = () => {
         const ndata=data.filter(obj=>obj.id!==id)
        
         setdata(ndata)
-        axios.delete(`http://${process.env.REACT_APP_ECURL}:8080/clients/${id}`)
+        axios.delete(`http://${process.env.REACT_APP_ECURL}:${process.env.REACT_APP_PORT}/clients/${id}`)
         .then(response=>{
           toast.success("Deleted client!!")
            console.log('Delete successful')})

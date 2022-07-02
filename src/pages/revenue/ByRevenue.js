@@ -11,7 +11,7 @@ const ByRevenue = () =>{
     const {user}=useAuthContext()
     const [revenues, setrevenues] = useState([]);
     function getData(){
-        axios.get(`http://${process.env.REACT_APP_ECURL}:8080/clients`)
+        axios.get(`http://${process.env.REACT_APP_ECURL}:${process.env.REACT_APP_PORT}/clients`)
         .then(function (response) {
           // handle success
           
@@ -47,7 +47,7 @@ const ByRevenue = () =>{
         const ndata=data.filter(obj=>obj.id!==id)
        
         setdata(ndata)
-        axios.delete(`http://${process.env.REACT_APP_ECURL}:8080/clients/${id}`)
+        axios.delete(`http://${process.env.REACT_APP_ECURL}:${process.env.REACT_APP_PORT}/clients/${id}`)
         .then(response=>{
           toast.success("Deleted client!!")
            console.log('Delete successful')})
