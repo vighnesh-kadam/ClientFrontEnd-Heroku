@@ -1,4 +1,4 @@
-import { ListGroup } from "react-bootstrap";
+
 import { Link } from "react-router-dom";
 
 
@@ -28,15 +28,12 @@ View by Revenue
 </div>
   </Link>
  
+  <Link to="/proj" className="text-decoration-none flexbox-item-1" >
   <div className="box">
-hello 
+Project Architecture
 </div>
+  </Link>
   
-
-
-<div className="box">
-hello 
-</div>
 
 </div>
      );

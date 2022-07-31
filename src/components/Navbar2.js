@@ -37,8 +37,8 @@ console.log("user",user)
             </>}
             {
       !user &&(<>
-    <Link to="/sign">  <Button>Signuppp</Button> </Link>
-    <Link to="/login">  <Button>Loginnn</Button> </Link>
+    <Link to="/sign">  <Button className="buttonsnav">Signup</Button> </Link>
+    <Link to="/login">  <Button className="buttonsnav">Login</Button> </Link>
       </>)}
           </Navbar.Collapse>
         </Container>

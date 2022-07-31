@@ -14,8 +14,8 @@ const Login = () => {
       
   }
   return ( <div>
-   
-<Form onSubmit={handleSubmit} className="signupForm">
+    <h1 className="mb-0 smalldisplay dc" >Login Page</h1>
+<Form onSubmit={handleSubmit} className="loginForm">
   <FormGroup row>
     <Label
       for="exampleEmail"

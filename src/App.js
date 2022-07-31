@@ -4,8 +4,6 @@ import { Col, Row } from "react-bootstrap";
 import Home from "./pages/home/Home.js"
 import Signup from "./pages/signup/Signup.js";
 import Login from "./pages/login/Login.js";
-import Navbarr from "./components/Navbarr.js";
-import { Container } from "reactstrap";
 import { useAuthContext } from "./hooks/useAuthContext.js";
 import Navbar2 from "./components/Navbar2.js";
 import Menu from "./components/Menu.js";
@@ -13,6 +11,7 @@ import AddClient from "./pages/AddClient.js";
 import DisplayClient from "./pages/display/DisplayClient.js";
 import UpdateClient from "./pages/update/UpdateClient.js";
 import ByRevenue from "./pages/revenue/ByRevenue.js";
+import Arch from "./pages/projectArch/Arch.js";
 import 'react-toastify/dist/ReactToastify.css';
 import './styles.css'
 function App() {
@@ -62,6 +61,11 @@ function App() {
    {user && <UpdateClient/>}
    {!user &&  <Redirect to="/login" /> }
    
+   </Route>
+
+   <Route exact path="/proj" > 
+   {!user &&  <Login/> }
+   {user && <Arch/>}
    </Route>
    
    </Switch></Col>

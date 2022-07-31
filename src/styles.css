@@ -77,11 +77,41 @@ a { color: white; }
     margin-top: 10%;
     margin-left: 35%;
  }
+ .loginForm{
+    margin-top: 5%;
+   
+ }
+.buttonsnav{
+margin-right:10px;
+}
+.landing{
+    margin-top: 10%;
+    margin-left: 25%;
+}
+.para{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.arch{
+    margin-top: 5%;
+    margin-left: 10%;
+    height: 300;
+    width: 700px;
+}
+
   @media (max-width:800px){
     .smallscreen{
         margin-top: 25%;
     }
     .smalldisplay{
         margin-top: 20%;
+    }
+    .arch{
+        margin-top: 5%;
+        margin-left: 10%;
+    height: 100;
+    width: 300px;
+
     }
   }

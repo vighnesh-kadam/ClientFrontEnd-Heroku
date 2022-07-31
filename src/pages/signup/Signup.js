@@ -17,8 +17,8 @@ const Signup = () => {
     
    }
    return ( <div>
-    
- <Form onSubmit={handleSubmit}>
+     <h1 className="mb-0 smalldisplay dc" >Sign up Page</h1>
+ <Form onSubmit={handleSubmit}  className="loginForm">
 
    <FormGroup row>
      <Label
