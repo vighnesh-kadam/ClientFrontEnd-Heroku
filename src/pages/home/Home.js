@@ -1,6 +1,6 @@
 const Home = () => {
     return ( <div>
-        <h1 className="mb-0 smalldisplay landing" >Welcome to Client Manager</h1>
+        <h1 className="mb-0 smalldisplay landing" >Welcome to Client Manager (Please use HTTP IN URL)</h1>
         <p className="para">
             An application to manage all your clients and their details in one place.It allows the user create an account and login giving them access to various actions such as :
 </p>
