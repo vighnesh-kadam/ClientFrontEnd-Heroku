@@ -1,14 +1,18 @@
 
-# Pathfinder Game using Graph algorithms
+# MyClient: Client Management System 
 
-Finds Path between 2 points using selected algorithm, maneuvering through obstacles at the same time.
+    A fullstack web application made using React for frontend, Java Springboot for backend API and MYSQL as database.
+	
+    Lets user sign up and add clients along with details such as revenue, email etc. It allows user to sort and view clients on revenue basis.
+    
+    Deployed the backend API to an AWS EC2 instance and frontend application on Heroku .
+	
+    Frontend to backend AJAX requests are done using the Axios library.
 
 
-## Screenshots
 
-![App Screenshot](https://github.com/vighnesh-kadam/Pathfinder-game/blob/main/screenshots/WhatsApp%20Image%202022-08-09%20at%204.36.19%20PM.jpeg?raw=true)
-![App Screenshot](https://github.com/vighnesh-kadam/Pathfinder-game/blob/main/screenshots/WhatsApp%20Image%202022-08-09%20at%205.10.54%20PM.jpeg?raw=true)
-![App Screenshot](https://github.com/vighnesh-kadam/Pathfinder-game/blob/main/screenshots/WhatsApp%20Image%202022-08-09%20at%205.11.09%20PM.jpeg?raw=true)
-![App Screenshot](https://github.com/vighnesh-kadam/Pathfinder-game/blob/main/screenshots/WhatsApp%20Image%202022-08-09%20at%205.11.22%20PM.jpeg?raw=true)
+## Project Architecture
+
+![App Screenshot](https://github.com/vighnesh-kadam/ClientFrontEnd-Heroku/blob/main/src/images/projectarchitecture.png?raw=true)
 
 
